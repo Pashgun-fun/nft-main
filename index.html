@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.module.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+
+<div class="preloader">
+    <div class="preloader__content">
+        <div class="preloader__text">0%</div>
+        <div class="preloader__progressbar">
+            <div class="preloader__complete"></div>
+        </div>
+    </div>
+</div>
+
+<header class="header">
+    <div class="header__wrapper wrapper">
+        <div class="header__languageMobile language">
+            <span class="lang en">en</span>/<span class="lang activeLang ru">ru</span>
+        </div>
+        <div class="header__years">
+            <span>2021*</span>
+            <div class="header__language language">
+                <span class="lang en">en</span>/<span class="lang activeLang ru">ru</span>
+            </div>
+            <span>2022</span>
+        </div>
+
+        <div class="header__logo">
+            <div class="header__nft"></div>
+        </div>
+
+        <div class="header__body">
+            <div class="header__navigation navigation">
+                <span class="header__name">COLLABORATION</span>
+                <span class="activeNav button1">1</span>
+                <span class="button2">2</span>
+                <span class="button3">3</span>
+                <span class="button4">4</span>
+                <span class="button5">5</span>
+            </div>
+            <div class="header__content">
+                <div class="header__collaboration">PUSHKEEN & BACK TO THE ROOTS</div>
+                <div class="header__info">
+                    <p>*Летом 2021 года в Северной Осетии прошел стрит-арт перформанс Back to the Roots. </p>
+                    <div>
+                        <img src="./assets/img/logo2.png" alt="" class="header__subtitle">
+                        <p>420 tokens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="second">
+    <div class="second__wrapper wrapper">
+        <div class="second__slider slider">
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Liberty.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Mak.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Bags.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Kalugin.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Vert.png" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="./assets/video/preloader/Uzhve.png" alt="">
+            </div>
+        </div>
+        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="second__works">
+            <div class="header__navigation navigation">
+                <span class="button1">1</span>
+                <span class="activeNav">2</span>
+                <span class="button3">3</span>
+                <span class="button4">4</span>
+                <span class="button5">5</span>
+            </div>
+            <div class="second__info">
+                <h1>о проекте</h1>
+                <p>Уличные художники из разных городов и стран создали 10 уникальных арт-объектов на отвесных скалах
+                    перевала Кахтисар, образовав самую большую галерею граффити на Северном Кавказе.</p>
+                <div class="second__gq">
+                    <svg width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M55.6646 25.3626C55.6646 25.3626 58.5992 21.5019 58.6094 16.4645C58.6299 6.5755 51.7689 0.154854 42.2086 0.144532C36.6667 0.134209 31.9632 2.85937 29.1104 6.85421C29.0082 6.70969 28.9059 6.5755 28.8037 6.43098C26.4213 3.2413 22.3006 0.0103383 15.91 1.57079e-05C8.39468 -0.0103069 2.58691 5.0684 0.674847 11.2723C0.654397 11.3445 0.633947 11.4271 0.613497 11.4994V11.5097C0.214724 12.9032 0 14.369 0 15.8865C0.0102249 17.3316 0.204499 18.7252 0.541922 20.0361C1.74847 24.5677 4.88753 28.3045 9.02863 30.3174C9.05931 30.3277 9.08998 30.3484 9.13088 30.369C9.15133 30.3794 9.17178 30.3897 9.19223 30.4C11.2781 31.36 13.6196 31.8968 16.1145 31.9071C21.3906 31.8658 26.0634 29.2542 28.9468 25.2594C29.0082 25.1768 29.0593 25.0942 29.1207 25.0116C31.9018 29.0581 36.5235 32 42.2597 32C46.0634 32 48.7526 30.3587 49.2434 30.1006L50.2556 31.4426H60L55.6646 25.3626ZM16.0225 23.1329C12.6176 23.1329 8.75256 20.4181 8.68098 16.0619C8.59918 11.551 12.4642 8.59872 16.0225 8.72259C18.9162 8.82582 20.0205 9.66195 21.6258 11.2619C21.6258 11.2619 23.9571 11.2619 26.3292 11.2619C26.5133 11.2619 26.6871 11.2619 26.8712 11.2619C26.8712 11.2619 26.8712 11.2619 26.8712 11.2723C26.6462 11.9742 26.4724 12.6865 26.3497 13.409H17.1575V20.9136H21.1861C21.1861 21.1097 19.1207 23.1329 16.0225 23.1329ZM49.7341 18.1574L48.9059 17.0219H39.0184L43.0368 22.8852C38.8548 23.711 34.8978 20.1807 34.9591 16.0723C35.0204 11.871 38.3742 8.73291 42.3926 8.75356C46.7996 8.78453 51.1861 13.5742 49.7341 18.1574Z"
+                              fill="white"/>
+                    </svg>
+                    <a target="_blank"
+                       href="https://www.gq.ru/entertainment/posmotrite-na-masshtabnyj-strit-art-performans-v-gorah-severnoj-osetii-alanii"
+                       class="second__read">Читать больше в статье </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="paralax"></section>
+
+<section class="tokens">
+    <div class="tokens__wrapper wrapper">
+        <div class="tokens__sliders">
+            <div class="header__navigation navigation">
+                <span class="button1">1</span>
+                <span class="button2">2</span>
+                <span class="button3 activeNav">3</span>
+                <span class="button4">4</span>
+                <span class="button5">5</span>
+            </div>
+
+            <div class="tokens__body">
+                <div class="tokens__buttons">
+                    <span class="activeTokenButton tokens__button btnRare">Редкие</span>
+                    <span class="tokens__button btnRarer">Очень редкие</span>
+                </div>
+                <div class="swiper mySwiper1 rare">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/StasBags.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Bags.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Uzhve.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Uzhve.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Lebertee.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Liberty.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Vert.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Vert.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Versus.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Kalugin.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Mack.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Mak.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/rare/Tembolat.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Uzhve.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper1 rarer hide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/StasBags.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Bags.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Uzhve.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Uzhve.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Lebertee.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Liberty.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Vert.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Vert.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Versus.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Kalugin.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Mack.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Mak.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <video preload="auto" no-controls autoplay loop playsinline muted>
+                                <source src="./assets/video/Tembolat.mp4" type="video/mp4">
+                            </video>
+                            <img src="./assets/video/preloader/Uzhve.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar swiper-scrollbar-mobile"></div>
+
+                <div class="tokens__arts">
+                    <div class="arts">
+                        <div class="swiper mySwiper2" style="height: max-content;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        стас багс
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        константин ужве
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        темболат гугкаев
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        Миша Либерти
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        миша мак
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        миша верт
+                                    </span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="person">
+                                        андрей калугин
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="arts__left mobileControllerAllSliderPrev"></div>
+                            <div class="arts__right mobileControllerAllSliderNext"></div>
+                        </div>
+
+                        <div class="swiper mySwiper3" style="height: max-content">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><span class="artTitle">Сloser to the world</span></div>
+                                <div class="swiper-slide"><span class="artTitle">The Viking and the Dog</span></div>
+                                <div class="swiper-slide"><span class="artTitle">#KOVER</span></div>
+                                <div class="swiper-slide"><span class="artTitle">Who are we?</span></div>
+                                <div class="swiper-slide"><span class="artTitle">Narrative</span></div>
+                                <div class="swiper-slide"><span class="artTitle">Beast Sign</span></div>
+                                <div class="swiper-slide"><span class="artTitle">Epic</span></div>
+                            </div>
+                            <div class="arts__left controllerAllSliderPrev"></div>
+                            <div class="arts__right controllerAllSliderNext"></div>
+                        </div>
+
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Моя работа состоит из трех частей. На первой изображен конь, их мы часто
+                                            встречали в Осетии. На второй – полароидный снимок нашего палаточного
+                                            лагеря. На третьей – стул. Почему стул? У всех нас разные корни, разный
+                                            бэкграунд. Но когда мы все встречаемся, садимся у костра и общаемся, мы
+                                            понимаем, что не такие уж мы и разные. Стул – некий символ равенства,
+                                            единства.
+                                            Площадь работы ~ 60 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@stasbags</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/52.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Это история про путешествия и ожидания, про гостей и хозяев, про
+                                            гостеприимство и радушие. В корабле плывет путник к новым неизведанным
+                                            землям. На берегу ладью ожидает Харальд Счастливый, древний король северных
+                                            земель со своей собачкой Оладушкой. Обе стороны волнительно ждут встречи. С
+                                            миром ли едут гости? С хлебом и солью ли встретят хозяева?
+                                            Площадь работы ~ 28 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@uzhve</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/54.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Я армянин, рождённый в России. Все определяющие меня культурные маркеры
+                                            объединены в одном объекте — ковре. У этого предмета интерьера богатая
+                                            история. На востоке коврами укрывали полы во дворцах, на Кавказе в них
+                                            воровали невест. В дореволюционной России ковры обозначали достаток, а в
+                                            СССР их вешали на стены квартир, чтобы было теплее и тише. Едва ли найдете
+                                            человека моего поколения, у которого нет снимка на фоне ковра.
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@mishalibertee</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/56.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Я всегда с большим интересом изучаю и впитываю локальную культуру и
+                                            интегрирую в
+                                            свои работы. Поэтому зритель видит узоры, орнаменты и детали осетинской и
+                                            аланской культуры, вплетенные в мою работу, а текст позволяет начать
+                                            внутренний
+                                            диалог в сознании зрителя. Именно этот диалог с самим собой я больше всего
+                                            ценю
+                                            в искусстве.
+                                            Площадь работы ~ 60 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@misha.vert</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/58.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Моя работа называется «Нарратив». Она показывает то, как тесно связаны
+                                            человек и природа – в частности, люди, проживающие на Кавказе. Насколько
+                                            важно их пребывание в горной местности. Они рождаются, проживают жизнь и
+                                            умирают там. Горы – это их дом, их крепость, в которой они чувствуют себя
+                                            защищенными.Площадь ~ 120 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@versus_flow</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/60.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            В Алании я оставил золотистую роспись – «ЗВЕRIНЫЙ ZНАК». Работа вдохновлена
+                                            древним наследием – скифо-сибирским звериным стилем и орнаментами из
+                                            нартского эпоса. Мой сюжет остался указывать путь на одном из самых крутых
+                                            подъемов в Кахтисаре.
+                                            Площадь работы ~ 40 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>@mishamack</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/57.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="arts__slider">
+                                        <p class="arts__tokensH">60 tokens</p>
+                                        <p class="arts__text">
+                                            Это Черная Лисица, речь о которой идет в Нартовском эпосе осетин. Этот
+                                            мистический персонаж – где-то триггер долгой философской притчи, а где-то
+                                            ключ для решения неразрешимой ситуации. Графическое изображение – попытка
+                                            автора заглянуть внутрь столь любопытного феномена.Площадь работы ~ 45 м²
+                                        </p>
+                                        <div class="arts__image">
+                                            <div class="arts__link">
+                                                <p>60 tokens</p>
+                                                <span>None</span>
+                                            </div>
+                                            <div class="arts__mobilePhoto">
+                                                <img class="arts__photo" src="assets/img/tokens_slider/55.png" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arts__left mobileControllerAllSliderPrev"></div>
+                            <div class="arts__right mobileControllerAllSliderNext"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tokens__authors"></div>
+    </div>
+</section>
+
+<section class="ideology">
+    <div class="ideology__wrapper wrapper">
+        <div class="ideology__content">
+            <div class="ideology__content">
+                <div class="header__navigation navigation">
+                    <span class="button1">1</span>
+                    <span class="button2">2</span>
+                    <span class="button3">3</span>
+                    <span class="button4 activeNav">4</span>
+                    <span class="button5">5</span>
+                </div>
+                <div class="ideology__body">
+                    <div class="price__header">
+                        <div class="price__title">
+                            <h1>Идеология <br> проекта</h1>
+                            <p class="ideology__title">На тыльной стороне каждого камня мы запечатлели кусочек истории,
+                                который тесно связан с
+                                Северной Осетией и нашим перформансом.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ideology__info">
+                        <div class="ideology__slider">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/1.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/2.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/3.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/4.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/5.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="./assets/img/idology_slider/6.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar swiper-scrollbar-main"></div>
+                            <div class="ideology__buttons">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="ideology__categories">
+                            <div class="category">
+                                <div class="category__count">х 350</div>
+                                <div class="category__body">
+                                    <div class="category__title"><span>редкие</span> <span>x 350</span></div>
+                                    <div class="category__text">На камнях обычной редкости можно прочитать интересные
+                                        факты о Северной Осетии и нашей жизни во время создания наскальных муралов, а
+                                        также посмотреть фотографии, сделанные в регионе.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <div class="category__count">х 70</div>
+                                <div class="category__body">
+                                    <div class="category__title"><span>очень редкие</span> <span>x 70</span></div>
+                                    <div class="category__text">
+                                        На редких же нанесены краткая биография и фото каждого художника, который
+                                        принимал участие в создании галереи на скалах.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="price">
+    <div class="price__wrapper wrapper">
+        <div class="price__header">
+            <div class="price__title">
+                <h1>PushKeen & <br>
+                    Back To The Roots</h1>
+                <p>Посмотреть рисунки на скалах вживую могут немногие.
+                    Чтобы сделать искусство стрит-арт художников более доступным, PushKeen запускает NFT-проект Back To
+                    The
+                    Roots.
+                </p>
+            </div>
+            <div class="price__htokens">
+                420
+                <span>tokens</span>
+            </div>
+        </div>
+
+        <div class="price__content">
+            <div class="header__navigation navigation">
+                <span class="button1">1</span>
+                <span class="button2">2</span>
+                <span class="button3">3</span>
+                <span class="button4">4</span>
+                <span class="activeNavLast button5">5</span>
+            </div>
+
+            <div class="price__tokens">
+                420
+                <span>tokens</span>
+            </div>
+
+            <div class="price__table">
+                <div class="price__row">
+                    <div class="price__card">
+                        <div class="card">
+                            <div class="card__title">
+                                350
+                                <span>редких</span>
+                            </div>
+                            <div class="card__content">
+                                <span>вращающаяся 3D модель камня</span>
+                                <ul>
+                                    <li><span>изображение
+                                работы художника</span></li>
+                                    <li>факт с фотографией</li>
+                                </ul>
+                            </div>
+                            <div class="card__prices">
+                                <div class="card__price">200 USD</div>
+                                <div class="card__button"><a href="">Приобрести</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__card price__separate"></div>
+                    <div class="price__card">
+                        <div class="card">
+                            <div class="card__title">
+                                70
+                                <span>очень редких</span>
+                            </div>
+                            <div class="card__content">
+                                <span>вращающаяся 3D модель камня</span>
+                                <ul>
+                                    <li>анимированное
+                                        изображение работы художника
+                                    </li>
+                                    <li>факт с фотографией</li>
+                                </ul>
+                            </div>
+
+                            <div class="card__prices">
+                                <div class="card__price">1 000 USD</div>
+                                <div class="card__button"><a href="">Приобрести</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="charity">
+    <div class="charity__info">
+        <svg width="50" height="43" viewBox="0 0 50 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M49.9817 0H17.2076C8.23919 0 0.985352 7.29973 0.985352 16.3093V36.4329V42.2858L8.37108 36.4329H33.7595C42.7279 36.4329 49.9817 29.1332 49.9817 20.1236V0ZM17.6043 7.43176C12.5267 7.43176 8.37219 11.5748 8.37219 16.7044V29.0679H12.0651V24.1357C13.5818 25.3194 15.5601 26.0428 17.6043 26.0428C22.682 26.0428 26.8365 21.8997 26.8365 16.7702C26.7706 11.5748 22.682 7.43176 17.6043 7.43176ZM17.6043 22.2943C14.5709 22.2943 12.0651 19.7953 12.0651 16.7044C12.0651 13.6135 14.5709 11.1145 17.6043 11.1145C20.6378 11.1145 23.1436 13.6135 23.1436 16.7044C23.1436 19.7953 20.6378 22.2943 17.6043 22.2943ZM36.3956 14.0739V15.3234C36.3956 15.9152 36.1977 17.4278 34.8788 18.1512C36.3956 19.0719 36.3956 20.5844 36.3956 21.1105V25.0563C36.3956 25.5167 36.5934 25.8455 37.6485 25.8455H38.9674V29.0679H35.9999C34.0216 29.0679 32.8346 27.6869 32.8346 25.4509V21.6366C32.8346 19.9926 31.9773 19.9926 31.7135 19.9926H30.3947V16.7044H31.7135C31.9773 16.7044 32.8346 16.7044 32.8346 14.9945V14.1396V11.0487C32.8346 8.74702 34.0216 7.43176 35.9999 7.43176H38.9674V10.5226H37.6485C36.5934 10.5226 36.3956 10.7857 36.3956 11.3118V14.0739Z"
+                  fill="white"/>
+        </svg>
+        <p>Большая часть средств, полученных
+            с продажи лотов, будет направлена художникам и на благотворительность.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__wrapper wrapper">
+        <ul class="footer__media">
+            <li><a href="https://www.reddit.com/user/PushKeen_NFT/" target="_blank" class="footer__social reddit"></a>
+            </li>
+            <li><a href="https://www.instagram.com/pushkeen.ru/" target="_blank" class="footer__social insta"></a></li>
+            <li><a href="https://twitter.com/PushKeen_NFT" target="_blank" class="footer__social twitter"></a></li>
+            <li><a href="https://t.me/pushkeen_nft" target="_blank" class="footer__social tg"></a></li>
+            <li><a href="https://pushkeen.ru/" target="_blank" class="footer__social pushkin"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="./assets/js/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+<script type="module" src="./assets/js/main.js"></script>
+
+</body>
+</html>
